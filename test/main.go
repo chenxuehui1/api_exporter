@@ -2,20 +2,20 @@ package main
 
 import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	//"github.com/chenxuehui1/api_exporter/collector"
+	"github.com/chenxuehui1/api_exporter/collector"
 	"io"
-	//"log"
+	"log"
 	"net/http"
 )
 
-/*func main() {
+func main() {
 	// ... assume a main handler named `handler`
 	http.Handle("/metrics", promhttp.Handler())
 	// ... other setup
 	http.Handle("/query", collector.InstrumentHandler(http.HandlerFunc(Query)))
 	http.Handle("/hello", collector.InstrumentHandler(http.HandlerFunc(Hello)))
 	log.Fatal(http.ListenAndServe(":9081", nil))
-}*/
+}
 
 
 // hello
