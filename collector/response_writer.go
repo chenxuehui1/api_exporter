@@ -1,7 +1,6 @@
 package collector
 
 import (
-	"fmt"
 	"net/http"
 )
 
@@ -28,6 +27,5 @@ func (w *InstrumentedResponseWriter) Length() int {
 }
 
 func (w *InstrumentedResponseWriter) StatusCode() int {
-	fmt.Println("status============",w.statusCode)
 	return w.statusCode
 }
